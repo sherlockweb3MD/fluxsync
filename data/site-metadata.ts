@@ -6,7 +6,7 @@ export const SITE_METADATA = {
     'A personal space on the cloud where I document my programming journey, sharing lessons, insights, and resources for fellow developers.',
   language: 'en-us',
   theme: 'system',
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://fluxsync.vercel.app',
   siteRepo: 'https://github.com/Sherlockweb3MD/fluxsync',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo-new.jpg`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.jpeg`,

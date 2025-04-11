@@ -38,7 +38,7 @@ const FONT_JETBRAINS_MONO = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_METADATA.siteUrl),
+  metadataBase: new URL(SITE_METADATA.siteUrl ?? 'https://fluxsync.vercel.app'),
   title: {
     default: SITE_METADATA.title,
     template: `%s | ${SITE_METADATA.title}`,
