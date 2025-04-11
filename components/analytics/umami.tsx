@@ -1,4 +1,4 @@
-import Script from 'next/script.js'
+import Script from 'next/script'
 
 interface UmamiAnalyticsProps {
   websiteId?: string
