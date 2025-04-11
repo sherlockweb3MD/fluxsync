@@ -10,7 +10,14 @@ export function UmamiAnalytics({
   src = 'https://cloud.umami.is/script.js',
 }: UmamiAnalyticsProps) {
   if (websiteId) {
-    return <Script async defer data-website-id={websiteId} src={src} />
+    return <Script
+  id="umami-analytics"
+  strategy="lazyOnload"
+  data-website-id={websiteId}
+  src={src}
+  onLoad={() => console.log('Umami script loaded')}
+  onError={(e) => console.error('Umami script failed to load:', e)}
+/>
   }
   return null
 }
